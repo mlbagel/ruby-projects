@@ -77,10 +77,10 @@ class NewPosts < Blog
     end
 
     def save_post
-      NewPosts.add(self)
+      Blog.add(self)
     end
   end
 
   NewPosts.post_info
+  blog_array = Blog.all
   puts blog_array.inspect
-  blog_array = NewPosts.all
